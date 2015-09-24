@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  opponent: MyString
+  result: MyString
+  bouttime: 2015-09-24 23:01:55
+  boutdate: 2015-09-24
+
+two:
+  opponent: MyString
+  result: MyString
+  bouttime: 2015-09-24 23:01:55
+  boutdate: 2015-09-24

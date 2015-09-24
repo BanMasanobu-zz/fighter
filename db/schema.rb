@@ -11,7 +11,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150924125715) do
+ActiveRecord::Schema.define(version: 20150924140155) do
+
+  create_table "bouts", force: :cascade do |t|
+    t.string   "opponent"
+    t.string   "result"
+    t.time     "bouttime"
+    t.date     "boutdate"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "fighters", force: :cascade do |t|
     t.string   "name"
