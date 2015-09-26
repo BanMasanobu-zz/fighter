@@ -3,11 +3,13 @@
 one:
   opponent: MyString
   result: MyString
-  bouttime: 2015-09-24 23:01:55
-  boutdate: 2015-09-24
+  bouttime: 2015-09-26 12:13:52
+  boutdate: 2015-09-26
+  fighter_id: 1
 
 two:
   opponent: MyString
   result: MyString
-  bouttime: 2015-09-24 23:01:55
-  boutdate: 2015-09-24
+  bouttime: 2015-09-26 12:13:52
+  boutdate: 2015-09-26
+  fighter_id: 1

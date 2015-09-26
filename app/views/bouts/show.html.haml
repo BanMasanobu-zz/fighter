@@ -1,0 +1,21 @@
+%p#notice= notice
+
+%p
+  %b Opponent:
+  = @bout.opponent
+%p
+  %b Result:
+  = @bout.result
+%p
+  %b Bouttime:
+  = @bout.bouttime
+%p
+  %b Boutdate:
+  = @bout.boutdate
+%p
+  %b Fighter:
+  = @bout.fighter_id
+
+= link_to 'Edit', edit_bout_path(@bout)
+\|
+= link_to 'Back', bouts_path

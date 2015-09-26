@@ -5,6 +5,7 @@ class CreateBouts < ActiveRecord::Migration
       t.string :result
       t.time :bouttime
       t.date :boutdate
+      t.integer :fighter_id
 
       t.timestamps null: false
     end

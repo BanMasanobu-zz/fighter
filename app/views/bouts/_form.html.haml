@@ -1,0 +1,25 @@
+= form_for @bout do |f|
+  - if @bout.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@bout.errors.count, "error")} prohibited this bout from being saved:"
+      %ul
+        - @bout.errors.full_messages.each do |msg|
+          %li= msg
+
+  .field
+    = f.label :opponent
+    = f.text_field :opponent
+  .field
+    = f.label :result
+    = f.text_field :result
+  .field
+    = f.label :bouttime
+    = f.time_select :bouttime
+  .field
+    = f.label :boutdate
+    = f.date_select :boutdate
+  .field
+    = f.label :fighter_id
+    = f.number_field :fighter_id
+  .actions
+    = f.submit 'Save'

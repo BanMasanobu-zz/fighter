@@ -1,0 +1,29 @@
+%h1 Listing bouts
+
+%table
+  %thead
+    %tr
+      %th Opponent
+      %th Result
+      %th Bouttime
+      %th Boutdate
+      %th Fighter
+      %th
+      %th
+      %th
+
+  %tbody
+    - @bouts.each do |bout|
+      %tr
+        %td= bout.opponent
+        %td= bout.result
+        %td= bout.bouttime
+        %td= bout.boutdate
+        %td= bout.fighter_id
+        %td= link_to 'Show', bout
+        %td= link_to 'Edit', edit_bout_path(bout)
+        %td= link_to 'Destroy', bout, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Bout', new_bout_path
